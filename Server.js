@@ -1,6 +1,6 @@
 const http = require('http');
-
 const server = http.createServer((req, res) => {
+
 
     if (req.url === '/') {
         res.statusCode = 200;
@@ -15,6 +15,7 @@ const server = http.createServer((req, res) => {
         res.setHeader('Content-Type', 'text/plain');
         res.end('Page Not Found 🚨\n');
     }
+
 });
 
 
