@@ -1,6 +1,7 @@
+## This Server is in http the main purpose is to be run in  NGINX
+
 const http = require('http');
 const server = http.createServer((req, res) => {
-
 
     if (req.url === '/') {
         res.statusCode = 200;
@@ -17,7 +18,6 @@ const server = http.createServer((req, res) => {
     }
 
 });
-
 
 const port = 3000;
 const hostname = '127.0.0.1';
