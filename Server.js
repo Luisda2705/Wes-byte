@@ -1,6 +1,8 @@
-## This Server is in http the main purpose is to be run in  NGINX
+// This Server is in the http module the main goal is to be run in NGINX
 
 const http = require('http');
+const fs = require('fs');
+
 const server = http.createServer((req, res) => {
 
     if (req.url === '/') {

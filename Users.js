@@ -7,4 +7,5 @@ function User(first, last, age, email) {
     this.email= email
 };
 
+
 console.log(Users.forEach(User => console.log(User)));
